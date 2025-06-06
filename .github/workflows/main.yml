@@ -1,0 +1,16 @@
+name: main.yml
+
+on:
+  push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: run ps script
+        shell: pwsh
+        run: .\HelloWorld.ps1
+        
