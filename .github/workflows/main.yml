@@ -1,7 +1,9 @@
 name: main.yml
 
 on:
-  push
+  push:
+  schedule:
+    - cron: "*/5 * * * *" 
 
 jobs:
   test:
