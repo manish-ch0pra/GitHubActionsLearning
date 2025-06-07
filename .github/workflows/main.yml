@@ -2,6 +2,7 @@ name: main.yml
 
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   test:
