@@ -10,6 +10,7 @@ jobs:
   cli:
     runs-on: ubuntu-latest
     env:
-      GH-TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+
     steps:
       - run: gh repo list
